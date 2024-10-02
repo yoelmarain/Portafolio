@@ -197,15 +197,10 @@ a {
     height: 200px;
 }
 
-.habilidades__elemento_sql {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    width: 210px;
-    height: 210px;
-    border-width: 2px 2px 2px 2px !important; 
+.habilidades__icono {
+    height: 40px;
+    width: auto;
+
 }
 
 /*------------------------------ Sección de Formacion --------------------------------*/
@@ -344,6 +339,202 @@ a {
 
 
 /* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Móviles */
+@media (max-width: 767px) {
+    body {
+        margin-left: 1rem;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cabecera {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cabecera__logo {
+        max-width: 80px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.2rem;
+    }
+
+    .navegacion__lista {
+        display: none;
+        margin-top: 1rem;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        flex: 1;
+    }
+
+    .presentacion__contenedor {
+        gap: 2rem;
+    }
+
+    .redes {
+        width: 100%;
+    }
+
+    .redes__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .presentacion__titulo {
+        font-size: 2rem;
+    }
+
+    .presentacion__subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .presentacion__foto {
+        max-width: 200px;
+    }
+
+    .sobre-mi {
+        width: 90%;
+    }
+
+    .sobre-mi__titulo {
+        font-size: 1.5rem;
+    }
+
+    .sobre-mi__texto {
+        font-size: 1rem;
+    }
+
+    .habilidades__titulo {
+        font-size: 1.5rem;
+    }
+
+    .habilidades__lista {
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 2.5rem;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .habilidades__elemento {
+        width: 150px;
+        height: 150px;
+    }
+
+    .habilidades__icono {
+        height: 30px;
+    }
+
+    .formacion__titulo {
+        font-size: 1.5rem;
+    }
+
+    .formacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formacion__lista {
+        gap: 5rem;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+    }
+    
+    .formacion__elemento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+    }
+
+    .formacion_nombre {
+        font-size: 1.2rem;
+    }
+
+    .formacion_detalle {
+        font-size: 0.9rem;
+    }
+
+    .formacion__icono {
+        width: 200px;
+        height: 100px;
+    }
+
+    .proyectos__titulo {
+        font-size: 1.5rem;
+    }
+
+    .proyectos__nombre {
+        font-size: 1.2rem;
+    }
+
+    .proyectos__contenedor {
+        gap: 0.5rem;
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .contacto__formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .contacto__titulo {
+        font-size: 1.5rem;
+    }
+
+    .contacto__campo {
+        width: 100%;
+    }
+
+    .contacto__campo--textarea {
+        height: 100px;
+    }
+
+    .contacto__boton {
+        width: 100%;
+    }
+}
+
 
 /* Tablets y pantallas más grandes */
 @media (min-width: 768px) {

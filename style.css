@@ -296,6 +296,7 @@ a {
     gap: 1rem;
     width: 100%;
     margin: 0 auto;
+    margin-top: 3rem;
     padding: 1rem;
     background-color:  var(--color-de-sobre-mi);
     border-radius: 10px;
@@ -389,8 +390,8 @@ a {
     .redes__img {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: center !important;
+        align-items: center !important;
         gap: 0.5rem;
     }
 
@@ -423,8 +424,8 @@ a {
     }
 
     .habilidades__lista {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        flex-direction: column;
         justify-content: center;
         margin-right: 2.5rem;
         align-items: center;
@@ -457,20 +458,20 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 2rem;
+    
     }
     
     .formacion__elemento {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center !important;
         gap: 0;
         width: 100%;
     }
 
     .formacion_nombre {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .formacion_detalle {
@@ -496,26 +497,20 @@ a {
         width: 90%;
     }
 
-    .contacto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-        width: 90%;
-        padding: 2rem;
-    }
+   .contacto {
+    width: 90%;
+   }
 
     .contacto__formulario {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
         gap: 1rem;
         width: 100%;
         padding: 1rem;
+        margin-top: 0;
+        margin-right: 2rem !important;
+        margin-left: 2rem !important; 
     }
 
     .contacto__titulo {
